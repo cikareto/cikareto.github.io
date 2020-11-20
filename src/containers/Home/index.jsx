@@ -1,0 +1,80 @@
+import { Frame } from "framer";
+
+import "./home.css";
+
+const Home = () => {
+  // Add staggering effect to the children of the container
+  const containerVariants = {
+    before: {},
+    after: { transition: { staggerChildren: 0.06 } },
+  };
+
+  // Variants for animating each letter
+  const letterVariants = {
+    before: {
+      color: "#2BE2FF",
+      opacity: 0,
+      y: 20,
+      transition: {
+        type: "spring",
+        damping: 16,
+        stiffness: 200,
+      },
+    },
+    after: {
+      color: "#fff",
+      opacity: 1,
+      y: 0,
+      transition: {
+        type: "spring",
+        damping: 16,
+        stiffness: 200,
+      },
+    },
+  };
+
+  const jumpText = (index, letter) => (
+    <Frame
+      key={index}
+      width={"auto"} // Set the width to the width of the letter
+      background={""}
+      style={{ position: "relative" }} // Position elements
+      variants={letterVariants}
+      whileHover={{ scale: 1.1, color: "#2BE2FF" }}
+      whileTap={{ scale: 0.8 }}
+    >
+      {letter === " " ? "\u00A0" : letter}
+    </Frame>
+  );
+
+  return (
+    <div className="home align-screen--vertical-centered">
+      <Frame
+        background={""}
+        style={{
+          display: "flex", // Set the display value to flex
+          flexDirection: "column",
+        }}
+        variants={containerVariants}
+        initial={"before"}
+        animate={"after"}
+      >
+        <div className="container home-greeting">
+          {["H", "i", ","].map((letter, index) =>
+            jumpText(index, letter)
+          )}
+        </div>
+        <div className="container home-introduce">
+          {Array.from(
+            "My name is Salisa Cheawcharnthong"
+          ).map((letter, index) => jumpText(index, letter))}
+        </div>
+        <div className="container home-role">
+          {jumpText(0, "<> Software Engineer </>")}
+        </div>
+      </Frame>
+    </div>
+  );
+};
+
+export default Home;

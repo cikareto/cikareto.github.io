@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+.home {
+  padding-left: 5rem;
+  display: flex;
+  font-family: "Lato", sans-serif;
+  cursor: default;
+}
+
+.home .container {
+  display: flex;
+  letter-spacing: 0.1rem;
+}
+
+.home-greeting {
+  font-weight: 700;
+  font-size: 5rem;
+  padding-bottom: 1rem;
+}
+
+.home-greeting div {
+  height: 5rem !important;
+}
+
+.home-introduce {
+  font-weight: 700;
+  font-size: 2rem;
+  padding-bottom: 1.25rem;
+}
+
+.home-introduce div {
+  height: 2rem !important;
+}
+
+.home-role {
+  font-family: 'Menlo', sans-serif;
+  letter-spacing: 0rem !important;
+  opacity: 0.9;
+}
+
+.home-role div {
+  height: 1rem !important;
+}
+
+@media screen and (max-width: 760px) {
+  .home-greeting {
+    font-size: 4rem;
+    padding-bottom: 0rem;
+  }
+
+  .home-greeting div {
+    height: 4rem;
+  }
+
+  .home-introduce {
+    font-size: 1.5rem;
+    letter-spacing: 0.05rem !important;
+    padding-bottom: 0.75rem;
+  }
+
+  .home-introduce div {
+    height: 1.5rem;
+  }
+
+  .home-role {
+    font-size: 0.9rem;
+  }
+
+  .home-role div {
+    height: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .home-greeting {
+    font-size: 3rem;
+  }
+
+  .home-greeting div {
+    height: 3rem;
+  }
+
+  .home-introduce {
+    font-size: 1.25rem;
+    letter-spacing: 0.05rem !important;
+    padding-bottom: 0rem;
+  }
+
+  .home-introduce div {
+    height: 1.25rem;
+  }
+
+  .home-role {
+    font-size: 0.8rem;
+    padding-top: 0.8rem;
+  }
+
+  .home-role div {
+    height: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .home {
+    padding-left: 2rem;
+  }
+}
