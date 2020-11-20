@@ -33,13 +33,36 @@
 }
 
 .home-role {
-  font-family: 'Menlo', sans-serif;
+  font-family: "Menlo", sans-serif;
   letter-spacing: 0rem !important;
   opacity: 0.9;
+  padding-bottom: 1.5rem;
 }
 
 .home-role div {
   height: 1rem !important;
+}
+
+.icon {
+  fill: #fff;
+  opacity: 0.8;
+  width: 20px;
+  height: 20px;
+}
+
+.icon:hover {
+  fill: #2be2ff;
+  opacity: 1;
+}
+
+.home-socials {
+  display: flex;
+}
+
+.home-socials div {
+  width: 20px !important;
+  height: 20px !important;
+  padding-right: 1rem;
 }
 
 @media screen and (max-width: 760px) {
@@ -64,10 +87,22 @@
 
   .home-role {
     font-size: 0.9rem;
+    padding-bottom: 1rem;
   }
 
   .home-role div {
     height: 0.9rem;
+  }
+
+  .icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .home-socials div {
+    width: 16px !important;
+    height: 16px !important;
+    padding-right: 0.75rem;
   }
 }
 
@@ -97,6 +132,17 @@
 
   .home-role div {
     height: 0.8rem;
+  }
+
+  .icon {
+    width: 15px;
+    height: 15px;
+  }
+
+  .home-socials div {
+    width: 15px !important;
+    height: 15px !important;
+    padding-right: 0.5rem;
   }
 }
 
