@@ -76,15 +76,15 @@ const Home = () => {
         initial={"before"}
         animate={"after"}
       >
-        <div className="container home-greeting">
+        <div className="container home-greeting font-header">
           {["H", "i", ","].map((letter, index) => jumpText(index, letter))}
         </div>
-        <div className="container home-introduce">
+        <div className="container home-introduce font-header">
           {Array.from(
             "My name is Salisa Cheawcharnthong"
           ).map((letter, index) => jumpText(index, letter))}
         </div>
-        <div className="container home-role">
+        <div className="container home-role font-primary">
           {jumpText(0, "<> Software Engineer </>")}
         </div>
         <div className="home-socials">
