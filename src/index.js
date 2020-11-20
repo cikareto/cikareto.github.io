@@ -2,11 +2,13 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 import Home from "./containers/Home";
+import Menu from './containers/Menu'
 import reportWebVitals from "./reportWebVitals";
 
 ReactDOM.render(
   <React.StrictMode>
     <Home />
+    <Menu />
   </React.StrictMode>,
   document.getElementById("root")
 );
