@@ -105,29 +105,29 @@
 @media screen and (max-width: 640px) {
   .home-greeting {
     font-size: 3rem;
+    padding-bottom: 0.25rem;
   }
 
   .home-greeting div {
-    height: 3rem;
+    height: 3rem !important;
   }
 
   .home-introduce {
     font-size: 1.25rem;
     letter-spacing: 0.05rem !important;
-    padding-bottom: 0rem;
+    padding-bottom: 0.5rem;
   }
 
   .home-introduce div {
-    height: 1.25rem;
+    height: 1.25rem !important;
   }
 
   .home-role {
     font-size: 0.8rem;
-    padding-top: 0.8rem;
   }
 
   .home-role div {
-    height: 0.8rem;
+    height: 0.8rem !important;
   }
 
   .icon {
@@ -145,5 +145,43 @@
 @media screen and (max-width: 480px) {
   .home {
     padding-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .home {
+    padding-left: 1rem;
+  }
+
+  .home-greeting {
+    font-size: 2.75rem;
+  }
+
+  .home-greeting div {
+    height: 2.75rem !important;
+  }
+
+  .home-introduce {
+    font-size: 1rem;
+  }
+  
+  .home-role {
+    font-size: 0.75rem;
+    /* padding: 0.25rem 0 0.5rem; */
+  }
+
+  .home-role div {
+    height: 0.75rem !important;
+  }
+
+  .icon {
+    width: 15px;
+    height: 15px;
+  }
+
+  .home-socials div {
+    width: 15px !important;
+    height: 15px !important;
+    padding-right: 0.5rem;
   }
 }
