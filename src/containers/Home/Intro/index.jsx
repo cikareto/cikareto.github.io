@@ -1,10 +1,10 @@
 import { Frame } from "framer";
 
-import { TwitterIcon, GithubIcon, LinkedInIcon, MediumIcon } from "../../icons";
+import { TwitterIcon, GithubIcon, LinkedInIcon, MediumIcon } from "../../../icons";
 
-import "./home.css";
+import "./intro.css";
 
-const Home = () => {
+const Intro = () => {
   // Add staggering effect to the children of the container
   const containerVariants = {
     before: {},
@@ -63,7 +63,7 @@ const Home = () => {
   );
 
   return (
-    <div className="home align-screen--vertical-centered">
+    <div className="intro align-screen--vertical-centered">
       <Frame
         background={""}
         style={{
@@ -76,18 +76,18 @@ const Home = () => {
         initial={"before"}
         animate={"after"}
       >
-        <div className="container home-greeting font-header">
+        <div className="container intro-greeting font-header">
           {["H", "i", ","].map((letter, index) => jumpText(index, letter))}
         </div>
-        <div className="container home-introduce font-header">
+        <div className="container intro-introduce font-header">
           {Array.from(
             "My name is Salisa Cheawcharnthong"
           ).map((letter, index) => jumpText(index, letter))}
         </div>
-        <div className="container home-role font-primary">
+        <div className="container intro-role font-primary">
           {jumpText(0, "<> Software Engineer </>")}
         </div>
-        <div className="home-socials">
+        <div className="intro-socials">
           {renderSocial("https://twitter.com/cikareto_", <TwitterIcon />)}
           {renderSocial("https://github.com/cikareto", <GithubIcon />)}
           {renderSocial(
@@ -101,4 +101,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Intro;

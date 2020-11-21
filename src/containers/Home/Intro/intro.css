@@ -1,41 +1,41 @@
-.home {
+.intro {
   padding-left: 5rem;
   display: flex;
   cursor: default;
 }
 
-.home .container {
+.intro .container {
   display: flex;
   letter-spacing: 0.1rem;
 }
 
-.home-greeting {
+.intro-greeting {
   font-weight: 700;
   font-size: 5rem;
   padding-bottom: 1rem;
 }
 
-.home-greeting div {
+.intro-greeting div {
   height: 5rem !important;
 }
 
-.home-introduce {
+.intro-introduce {
   font-weight: 700;
   font-size: 2rem;
   padding-bottom: 1.25rem;
 }
 
-.home-introduce div {
+.intro-introduce div {
   height: 2rem !important;
 }
 
-.home-role {
+.intro-role {
   letter-spacing: 0rem !important;
   opacity: 0.9;
   padding-bottom: 1.5rem;
 }
 
-.home-role div {
+.intro-role div {
   height: 1rem !important;
 }
 
@@ -51,42 +51,42 @@
   opacity: 1;
 }
 
-.home-socials {
+.intro-socials {
   display: flex;
 }
 
-.home-socials div {
+.intro-socials div {
   width: 20px !important;
   height: 20px !important;
   padding-right: 1rem;
 }
 
 @media screen and (max-width: 760px) {
-  .home-greeting {
+  .intro-greeting {
     font-size: 4rem;
     padding-bottom: 0rem;
   }
 
-  .home-greeting div {
+  .intro-greeting div {
     height: 4rem;
   }
 
-  .home-introduce {
+  .intro-introduce {
     font-size: 1.5rem;
     letter-spacing: 0.05rem !important;
     padding-bottom: 0.75rem;
   }
 
-  .home-introduce div {
+  .intro-introduce div {
     height: 1.5rem;
   }
 
-  .home-role {
+  .intro-role {
     font-size: 0.9rem;
     padding-bottom: 1rem;
   }
 
-  .home-role div {
+  .intro-role div {
     height: 0.9rem;
   }
 
@@ -95,7 +95,7 @@
     height: 16px;
   }
 
-  .home-socials div {
+  .intro-socials div {
     width: 16px !important;
     height: 16px !important;
     padding-right: 0.75rem;
@@ -103,30 +103,30 @@
 }
 
 @media screen and (max-width: 640px) {
-  .home-greeting {
+  .intro-greeting {
     font-size: 3rem;
     padding-bottom: 0.25rem;
   }
 
-  .home-greeting div {
+  .intro-greeting div {
     height: 3rem !important;
   }
 
-  .home-introduce {
+  .intro-introduce {
     font-size: 1.25rem;
     letter-spacing: 0.05rem !important;
     padding-bottom: 0.5rem;
   }
 
-  .home-introduce div {
+  .intro-introduce div {
     height: 1.25rem !important;
   }
 
-  .home-role {
+  .intro-role {
     font-size: 0.8rem;
   }
 
-  .home-role div {
+  .intro-role div {
     height: 0.8rem !important;
   }
 
@@ -135,7 +135,7 @@
     height: 15px;
   }
 
-  .home-socials div {
+  .intro-socials div {
     width: 15px !important;
     height: 15px !important;
     padding-right: 0.5rem;
@@ -143,34 +143,34 @@
 }
 
 @media screen and (max-width: 480px) {
-  .home {
+  .intro {
     padding-left: 2rem;
   }
 }
 
 @media screen and (max-width: 400px) {
-  .home {
+  .intro {
     padding-left: 1rem;
   }
 
-  .home-greeting {
+  .intro-greeting {
     font-size: 2.75rem;
   }
 
-  .home-greeting div {
+  .intro-greeting div {
     height: 2.75rem !important;
   }
 
-  .home-introduce {
+  .intro-introduce {
     font-size: 1rem;
   }
   
-  .home-role {
+  .intro-role {
     font-size: 0.75rem;
     /* padding: 0.25rem 0 0.5rem; */
   }
 
-  .home-role div {
+  .intro-role div {
     height: 0.75rem !important;
   }
 
@@ -179,7 +179,7 @@
     height: 15px;
   }
 
-  .home-socials div {
+  .intro-socials div {
     width: 15px !important;
     height: 15px !important;
     padding-right: 0.5rem;
