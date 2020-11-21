@@ -3,13 +3,19 @@
   flex-direction: column;
   position: fixed; top: 0; right: 0;
   padding: 1rem;
+  margin: 1rem;
+  background: #232323;
+  border-radius: 40px;
 }
 
 .menu .icon {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   opacity: 0.5;
-  padding-bottom: 0.5rem;
+}
+
+.menu .icon:not(:last-child) {
+  padding-bottom: 1.5rem;
 }
 
 .menu .icon:hover {
