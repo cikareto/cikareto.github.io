@@ -2,3 +2,7 @@
 .canvas-sphere canvas:focus {
   outline: none;
 }
+
+.canvas-sphere {
+  position: absolute !important;
+}
