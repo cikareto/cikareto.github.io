@@ -1,0 +1,4 @@
+
+.canvas-sphere canvas:focus {
+  outline: none;
+}
