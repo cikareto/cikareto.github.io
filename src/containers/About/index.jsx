@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import cx from "classnames";
+import { isMobile } from "react-device-detect";
 
 import Header from "./Header";
 
@@ -34,6 +35,8 @@ const About = () => {
     }
   };
 
+  const isShowContent = isTypingEnd || isMobile;
+
   return (
     <div
       className="main align-screen--vertical-centered font-primary"
@@ -42,28 +45,37 @@ const About = () => {
       tabIndex="0"
       onKeyDown={_handleKeyPress}
     >
+      {isMobile && (
+        <div className="about-info">
+          open in desktop to get full experience 🤪
+        </div>
+      )}
+
       <div className="about">
         <div className="about-header">
-          {isTypingEnd ? (
+          {isShowContent ? (
             "<AboutMe>"
           ) : (
             <Header texts={texts} keyPress={keyPress} />
           )}
         </div>
-        <div className={cx("about-content", isTypingEnd ? "show" : "hide")}>
+        <div className={cx("about-content", isShowContent ? "show" : "hide")}>
           <div>
-            Hi, I'm Salisa Cheawcharnthong, Software Engineer, currently working at Bangkok TH.
+            Hi, I'm Salisa Cheawcharnthong, Software Engineer, currently working
+            at Bangkok TH.
           </div>
           <br />
           <div>
-            Ability to think through a problem with the confidence to make a decision. Well-organized, positive, tolerant, and practical person.
+            Ability to think through a problem with the confidence to make a
+            decision. Well-organized, positive, tolerant, and practical person.
           </div>
           <br />
           <div>
-            Enthusiastic to take on new and challenge things to gain more future knowledge.
+            Enthusiastic to take on new and challenge things to gain more future
+            knowledge.
           </div>
         </div>
-        <div className="about-header">{isTypingEnd && "</AboutMe>"}</div>
+        <div className="about-header">{isShowContent && "</AboutMe>"}</div>
       </div>
     </div>
   );

@@ -21,6 +21,12 @@
   visibility: hidden;
 }
 
+.about-info {
+  position: absolute;
+  top: 0;
+  font-size: 0.75rem;
+}
+
 @media screen and (max-width: 640px) {
   .about-content {
     width: auto;
