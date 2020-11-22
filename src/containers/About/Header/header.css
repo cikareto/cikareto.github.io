@@ -1,0 +1,14 @@
+.cursor_placeholder {
+  display: flex;
+  width: 100px;
+  top: -30px;
+  left: 5px;
+  position: relative;
+  font-size: 0.75rem;
+}
+
+.cursor_placeholder div {
+  position: relative;
+  top: -5px;
+  left: 5px;
+}

@@ -1,0 +1,9 @@
+.about {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-header {
+  font-size: 2rem;
+  height: 2rem;
+}

@@ -5,6 +5,7 @@ import MediumIcon from "./medium";
 import HomeIcon from "./home";
 import AboutIcon from "./about";
 import SkillIcon from "./skill";
+import ArrowIcon from "./arrow";
 
 export {
   TwitterIcon,
@@ -14,4 +15,5 @@ export {
   HomeIcon,
   AboutIcon,
   SkillIcon,
+  ArrowIcon,
 };
