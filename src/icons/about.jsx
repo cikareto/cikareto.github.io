@@ -6,7 +6,7 @@ const AboutIcon = () => (
     x="0px"
     y="0px"
     viewBox="0 0 50 50"
-    enable-background="new 0 0 50 50"
+    enableBackground="new 0 0 50 50"
   >
     <path
       d="M11.833,39.468h30c0.553,0,1-0.447,1-1V14.47c0-0.553-0.447-1-1-1h-30c-0.553,0-1,0.447-1,1v23.998

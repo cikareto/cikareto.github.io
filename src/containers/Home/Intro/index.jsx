@@ -70,7 +70,7 @@ const Intro = () => {
           display: "flex", // Set the display value to flex
           flexDirection: "column",
           height: "auto",
-          "padding-bottom": "5rem",
+          "paddingBottom": "5rem",
         }}
         variants={containerVariants}
         initial={"before"}

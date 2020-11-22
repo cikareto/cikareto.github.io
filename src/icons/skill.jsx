@@ -6,7 +6,7 @@ const SkillIcon = () => (
     x="0px"
     y="0px"
     viewBox="0 0 50 50"
-    enable-background="new 0 0 50 50"
+    enableBackground="new 0 0 50 50"
   >
     <path
       d="M10.18,27.452l2.396,0.263c0.318,1.3,0.832,2.531,1.531,3.675l-1.462,1.819

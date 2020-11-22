@@ -6,7 +6,7 @@ const HomeIcon = () => (
     x="0px"
     y="0px"
     viewBox="0 0 50 50"
-    enable-background="new 0 0 50 50"
+    enableBackground="new 0 0 50 50"
   >
     <path
       d="M40.348,23.401l-15-10.909c-0.351-0.256-0.826-0.256-1.177,0l-15,10.909c-0.446,0.324-0.545,0.95-0.22,1.396
