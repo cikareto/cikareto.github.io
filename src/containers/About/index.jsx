@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Header from "./Header";
 
 import "./index.css";
@@ -6,6 +6,12 @@ import "./index.css";
 const About = () => {
   const [typed, setTyped] = useState([]);
   const [keyPress, setKeyPress] = useState("");
+
+  const aboutRef = useRef()
+
+  useEffect(() => {
+    aboutRef.current.focus()
+  }, [])
 
   const texts = Array.from("<AboutMe");
   const typeTexts = [...texts, ">", "Enter"];
@@ -24,10 +30,10 @@ const About = () => {
   };
 
   return (
-    // TODO: auto fucus
     <div
       className="main align-screen--vertical-centered font-primary"
       id="main_about"
+      ref={aboutRef}
       tabIndex="0"
       onKeyDown={_handleKeyPress}
     >

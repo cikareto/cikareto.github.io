@@ -1,3 +1,7 @@
+#main_about:focus {
+  outline: none;
+}
+
 .about {
   display: flex;
   flex-direction: column;
