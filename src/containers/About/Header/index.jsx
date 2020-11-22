@@ -14,7 +14,7 @@ const Header = ({ texts, keyPress }) => {
         display: "flex", // Set the display value to flex
       }}
     >
-      {['', ...texts].map((letter, index) => (
+      {["", ...texts].map((letter, index) => (
         <>
           <Frame
             key={index}
@@ -51,13 +51,20 @@ const Header = ({ texts, keyPress }) => {
                   display: "inline-block",
                   position: "absolute",
                 }}
-                initial={"active"}
-                animate={isAnimated(index, letter) && "active"}
+                initial={"hidden"}
+                animate={isAnimated(index, letter) && "show"}
                 variants={{
-                  active: {
+                  hidden: {
                     background: "#fff",
+                    opacity: 0,
+                  },
+                  show: {
                     opacity: 0.2,
                   },
+                }}
+                transition={{
+                  duration: 0.5,
+                  loop: Infinity,
                 }}
               >
                 <div
