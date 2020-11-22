@@ -63,7 +63,7 @@ const Intro = () => {
   );
 
   return (
-    <div className="intro align-screen--vertical-centered">
+    <div className="main intro align-screen--vertical-centered">
       <Frame
         background={""}
         style={{

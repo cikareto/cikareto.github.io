@@ -1,5 +1,4 @@
 .intro {
-  padding-left: 5rem;
   display: flex;
   cursor: default;
 }
@@ -142,17 +141,7 @@
   }
 }
 
-@media screen and (max-width: 480px) {
-  .intro {
-    padding-left: 2rem;
-  }
-}
-
 @media screen and (max-width: 400px) {
-  .intro {
-    padding-left: 1rem;
-  }
-
   .intro-greeting {
     font-size: 2.75rem;
   }

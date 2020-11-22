@@ -17,6 +17,10 @@ body {
   color: #fff;
 }
 
+.main {
+  padding-left: 5rem;
+}
+
 .font-header {
   font-family: "Lato";
 }
@@ -39,6 +43,17 @@ body {
   height: 100%;
 }
 
+@media screen and (max-width: 480px) {
+  .main {
+    padding-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main {
+    padding-left: 1rem;
+  }
+}
 
 @keyframes fadein {
   from { opacity: 0; }
