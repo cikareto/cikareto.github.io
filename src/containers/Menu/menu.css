@@ -4,8 +4,9 @@
   position: fixed; top: 0; right: 0;
   padding: 1rem;
   margin: 1rem;
-  background: #232323;
-  border-radius: 40px;
+  z-index: 2;
+  /* background: #232323;
+  border-radius: 40px; */
 }
 
 .menu .icon {
@@ -14,8 +15,8 @@
   opacity: 0.5;
 }
 
-.menu .icon:not(:last-child) {
-  padding-bottom: 1.5rem;
+.menu a:not(:last-child) {
+  margin-bottom: 1.5rem;
 }
 
 .menu .icon:hover {
