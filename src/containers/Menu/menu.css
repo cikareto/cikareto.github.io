@@ -15,10 +15,19 @@
   opacity: 0.5;
 }
 
+.menu a {
+  text-align: center;
+}
+
 .menu a:not(:last-child) {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
 }
 
 .menu .icon:hover {
   opacity: 1;
+}
+
+.link--disabled {
+  pointer-events: none;
+  opacity: 0.3;
 }
