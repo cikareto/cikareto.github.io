@@ -11,17 +11,17 @@ const Header = ({ texts, keyPress }) => {
   return (
     <div
       style={{
-        display: "flex", // Set the display value to flex
+        display: "flex"
       }}
     >
       {["", ...texts].map((letter, index) => (
         <>
           <Frame
             key={index}
-            width={"auto"} // Set the width to the width of the letter
+            width={"auto"}
             height={"2rem"}
             background={""}
-            style={{ position: "relative" }} // Position elements
+            style={{ position: "relative" }}
             initial={"before"}
             animate={isAnimated(index, letter) && "after"}
             variants={{
@@ -40,7 +40,7 @@ const Header = ({ texts, keyPress }) => {
               },
             }}
           >
-            {letter === " " ? "\u00A0" : letter}
+            {letter}
             {isAnimated(index, letter) && (
               <Frame
                 key={`cursor-${index}`}
@@ -52,7 +52,7 @@ const Header = ({ texts, keyPress }) => {
                   position: "absolute",
                 }}
                 initial={"hidden"}
-                animate={isAnimated(index, letter) && "show"}
+                animate={keyPress === letter && "show"}
                 variants={{
                   hidden: {
                     background: "#fff",
@@ -72,7 +72,7 @@ const Header = ({ texts, keyPress }) => {
                 >
                   <ArrowIcon />
                   <div>
-                    {letter === "></AboutMe>" ? "Press Enter!" : "Type this"}
+                    {letter === ">" ? "Press Enter!" : "Type this"}
                   </div>
                 </div>
               </Frame>
