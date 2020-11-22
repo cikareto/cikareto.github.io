@@ -27,6 +27,11 @@
   opacity: 1;
 }
 
+.menu .active .icon {
+  fill: #2be2ff;
+  opacity: 1;
+}
+
 .link--disabled {
   pointer-events: none;
   opacity: 0.3;
