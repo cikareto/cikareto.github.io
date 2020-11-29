@@ -13,7 +13,7 @@ const Home = lazy(() => import("./containers/Home"));
 
 ReactDOM.render(
   <Suspense fallback={<Loader />}>
-    <Router>
+    <Router basename='/'>
       <Menu />
       <Switch>
         <Route path="/about">
