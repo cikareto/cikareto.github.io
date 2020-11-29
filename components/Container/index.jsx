@@ -1,10 +1,21 @@
+import React, { useEffect } from "react";
 import Head from "next/head";
 import Menu from "../../containers/Menu";
+import { initGA, logPageView } from "../../utils/analytics";
 
 const imgBanner =
   "https://github.com/cikareto/cikareto.github.io/blob/gh-pages/card.png?raw=true";
 
 const Container = ({ metadata }) => {
+
+  useEffect(() => {
+    if (!window.GA_INITIALIZED) {
+      initGA()
+      window.GA_INITIALIZED = true
+    }
+    logPageView()
+  }, [])
+
   return (
     <>
       <Head>
