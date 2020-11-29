@@ -7,8 +7,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "export": "npm run build && next export && touch out/.nojekyll",
+    "deploy": "NODE_ENV=production npm run export && gh-pages -d out"
   },
   "dependencies": {
     "@zeit/next-css": "^1.0.1",
