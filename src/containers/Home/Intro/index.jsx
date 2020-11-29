@@ -1,6 +1,11 @@
 import { Frame } from "framer";
 
-import { TwitterIcon, GithubIcon, LinkedInIcon, MediumIcon } from "../../../icons";
+import {
+  TwitterIcon,
+  GithubIcon,
+  LinkedInIcon,
+  MediumIcon,
+} from "../../../icons";
 
 import "./intro.css";
 
@@ -49,14 +54,20 @@ const Intro = () => {
     </Frame>
   );
 
-  const renderSocial = (link, icon) => (
+  const renderSocial = (social, link, icon) => (
     <Frame
       background={""}
       style={{ position: "relative" }} // Position elements
       variants={letterVariants}
       whileHover={{ scale: 1.2 }}
     >
-      <a href={link} target="_blank" rel="noreferrer">
+      <a
+        role="button"
+        aria-label={social}
+        href={link}
+        target="_blank"
+        rel="noreferrer"
+      >
         {icon}
       </a>
     </Frame>
@@ -70,7 +81,7 @@ const Intro = () => {
           display: "flex", // Set the display value to flex
           flexDirection: "column",
           height: "auto",
-          "paddingBottom": "5rem",
+          paddingBottom: "5rem",
         }}
         variants={containerVariants}
         initial={"before"}
@@ -88,13 +99,26 @@ const Intro = () => {
           {jumpText(0, "<> Software Engineer </>")}
         </div>
         <div className="intro-socials">
-          {renderSocial("https://twitter.com/cikareto_", <TwitterIcon />)}
-          {renderSocial("https://github.com/cikareto", <GithubIcon />)}
           {renderSocial(
+            "twitter",
+            "https://twitter.com/cikareto_",
+            <TwitterIcon />
+          )}
+          {renderSocial(
+            "github",
+            "https://github.com/cikareto",
+            <GithubIcon />
+          )}
+          {renderSocial(
+            "linkedin",
             "https://www.linkedin.com/in/salisa-cct/",
             <LinkedInIcon />
           )}
-          {renderSocial("https://medium.com/@salisa.cct", <MediumIcon />)}
+          {renderSocial(
+            "medium",
+            "https://medium.com/@salisa.cct",
+            <MediumIcon />
+          )}
         </div>
       </Frame>
     </div>

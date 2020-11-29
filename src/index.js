@@ -1,26 +1,31 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-} from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./index.css";
-import Menu from './containers/Menu'
-import About from './containers/About'
-// import Skill from './containers/Skill'
-import Home from "./containers/Home";
+
+import Loader from "./components/Loader";
+import Menu from "./containers/Menu";
 import reportWebVitals from "./reportWebVitals";
 
+const About = lazy(() => import("./containers/About"));
+const Home = lazy(() => import("./containers/Home"));
+// const Skill = lazy(() => import('./containers/Skill'));
+
 ReactDOM.render(
-  <Router>
-    <Menu />
-    <Switch>
-      <Route path="/about"><About /></Route>
-      {/* <Route path="/skill"><Skill /></Route> */}
-      <Route path="/"><Home /></Route>
-    </Switch>
-  </Router>,
+  <Suspense fallback={<Loader />}>
+    <Router>
+      <Menu />
+      <Switch>
+        <Route path="/about">
+          <About />
+        </Route>
+        {/* <Route path="/skill"><Skill /></Route> */}
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
+    </Router>
+  </Suspense>,
   document.getElementById("root")
 );
 

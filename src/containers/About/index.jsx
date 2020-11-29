@@ -47,7 +47,7 @@ const About = () => {
     >
       {isMobile && (
         <div className="about-info">
-          open in desktop to get full experience 🤪
+          open in desktop to get full experience ;)
         </div>
       )}
 

@@ -38,18 +38,6 @@
   height: 1rem !important;
 }
 
-.icon {
-  fill: #fff;
-  opacity: 0.8;
-  width: 20px;
-  height: 20px;
-}
-
-.icon:hover {
-  fill: #2be2ff;
-  opacity: 1;
-}
-
 .intro-socials {
   display: flex;
 }
