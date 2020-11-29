@@ -1,6 +1,7 @@
 import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+// FIXME: Page not found
+import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import "./index.css";
 
 import Loader from "./components/Loader";
