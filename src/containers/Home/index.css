@@ -17,3 +17,7 @@
   -o-animation: fadein 5s; /* Opera < 12.1 */
   animation: fadein 5s;
 }
+
+.home__spheres--active {
+  z-index: 0 !important;
+}
