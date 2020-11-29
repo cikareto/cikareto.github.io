@@ -8,6 +8,9 @@ import * as cx from 'classnames'
 
 import './style.css'
 
+// import dynamic from 'next/dynamic'
+// const { Canvas, useThree, useResource }  = dynamic(import('react-three-fiber'), { ssr: false })
+
 const Scene = ({position = [0, 0, 0], size = 1, opacity = 1}) => {
   return (
     <>
